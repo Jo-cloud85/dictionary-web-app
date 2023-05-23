@@ -1,0 +1,143 @@
+@media screen and (min-width: 600px) {
+    /* ----------------- Overall structure ----------------- */
+    body {
+        padding: 3.5rem 2.5rem var(--r117) 2.5rem;
+    }
+
+    /* ------------------------ Nav ------------------------ */
+    #app-logo {
+        width: 2rem;
+    }
+
+    /* ---------- Select menu -----------*/
+    .select, .option {
+        font-size: var(--r18);
+    }
+
+    .select {
+        width: var(--r117);
+    }
+
+    .options-list {
+        width: var(--r183);
+    }
+
+    .options-list.active{
+        margin-left: -4rem;
+    }
+    /* --------------------------------- */
+
+    #choices #divide {
+        padding: 0 var(--r26);
+    }
+
+    /* ----------------- Search bar section ---------------- */
+    #searchbar-section {
+        margin: var(--r52) 0 var(--r44) 0;
+    }
+
+    #searchbar-sub-section {
+        padding: var(--r20) 1.5rem;
+    }
+
+    #err-msg,
+    #search-input  {
+        font-size: var(--r20);
+        line-height: 1.5rem;
+    }
+
+    #search-btn img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    /* ------------------- Word section -------------------- */
+    #word-section {
+        margin-bottom: 2.5rem;
+    }
+
+    #word span:first-child {
+        font-size: 4rem;
+        line-height: var(--r77);
+    }
+
+    #word span:last-child {
+        color: var(--purple);
+        font-size: 1.5rem;
+        line-height: var(--r30);
+    }
+
+    #word-section button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }  
+
+    #word-section button svg {
+        width: var(--r75);
+        height: var(--r75);
+    }
+
+    /* ----------------- Definition section ---------------- */
+    .type {
+        font-size: 1.5rem;
+        line-height: var(--r30);
+        margin: 2.5rem 0;
+    }
+
+    .gray-text,
+    .synonym-words,
+    .antonym-words {
+        font-size: var(--r20);
+        line-height: 1.5rem;
+    }
+
+    .part-of-speech ul {
+        font-size: var(--r18);
+        padding-left: 2.5rem;
+        margin: 1.5rem 0 var(--r52) 0;
+    }
+
+    .synonym-div,
+    .antonym-div {
+        grid-template-columns: var(--r117) 1fr;
+    }
+
+    #full-line {
+        margin-bottom: var(--r20);
+    }
+
+    #source-section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    #gray-text-source {
+        padding-bottom: 0;
+        padding-right: var(--r20);
+    }
+
+    /* ------------------- Error section ------------------ */
+    #error-section img {
+        height: 4rem;
+        width: 4rem;
+        padding-bottom: var(--r44);
+    }
+
+    #error-section p strong {
+        font-size: var(--r20);
+    }
+
+    #error-section p:last-child {
+        font-size: var(--r18);
+        line-height: 2rem;
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body { /* This is the only difference between the tablet and desktop */
+        padding: 3.5rem calc(((100vw - 1000px)/2) + 132px);
+    }
+}

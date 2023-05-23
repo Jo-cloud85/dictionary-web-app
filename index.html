@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./starter-code/assets/images/logo.svg">
+  <title>Dictionary web app</title>
+  <link rel="stylesheet" href="./starter-code/css/styles.css">
+  <link rel="stylesheet" href="./starter-code/css/tablet_desktop.css">
+</head>
+
+<body>
+  <div class="loader-container">
+    <div class="loader loader_bubble"></div>
+  </div>
+
+  <main>
+
+    <nav>
+      <img id="app-logo" src="./starter-code/assets/images/logo.svg" alt="logo">
+      <div id="choices">
+        <div>
+          <div class="select">
+            <span>Sans Serif</span>
+          </div>
+          <div class="options-list">
+            <div class="option" id="sans-serif">Sans Serif</div>
+            <div class="option" id="serif">Serif</div>
+            <div class="option" id="mono">Mono</div>
+          </div>
+        </div>
+        <span id="divide">|</span>
+        <div id="toggle-switch">
+          <input type="checkbox" id="toggle">
+          <label for="toggle" id="toggle-label"></label>
+        </div>
+        <img id="icon-moon" src="/starter-code/assets/images/icon-moon.svg" alt="icon-moon">
+      </div>
+    </nav>
+
+    <div id="searchbar-section">
+      <div id="searchbar-sub-section">
+        <input id="search-input" type="text" placeholder="Search for any word...">
+        <button type="submit" id="search-btn">
+          <img src="./starter-code/assets/images/icon-search.svg" alt="icon-search">
+        </button>
+      </div>
+      <p id="err-msg">Whoops, can't be empty...</p>
+    </div>
+
+    <div id="word-section">
+      <div id="word">
+        <span id="word-text"></span>
+        <span id="word-pronounce"></span>
+      </div>
+      <button type="button">
+        <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+          <g fill="#a445ed" fill-rule="evenodd">
+            <circle cx="37.5" cy="37.5" r="37.5" opacity=".25" />
+            <path d="M29 27v21l21-10.5z" fill="" />
+          </g>
+        </svg>
+      </button>
+    </div>
+
+    <div id="definition-section"></div>
+
+    <div id="error-section">
+      <img src="./starter-code/assets/images/sad.png" alt="sad-face">
+      <p><strong>No Definitions Found</strong></p>
+      <p>Sorry pal, we couldn't find definitions for the word you were looking for. You can try the search again at later time or head to the web instead.</p>
+    </div>
+
+  </main>
+
+  <script src="./starter-code/js/script.js"></script>
+</body>
+
+</html>
