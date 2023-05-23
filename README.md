@@ -34,16 +34,16 @@ Users should be able to:
 
 ### Screenshot
 
-- Main: ![../dictionary-web-app/starter-code/assets/images/main.png](../dictionary-web-app/starter-code/assets/images/main.png)
+- Main: ![./starter-code/assets/images/main.png](./starter-code/assets/images/main.png)
 
-- Dropdown-mono: ![../dictionary-web-app/starter-code/assets/images/dropdown_mono.png](../dictionary-web-app/starter-code/assets/images/dropdown_mono.png)
+- Dropdown-mono: ![./starter-code/assets/images/dropdown_mono.png](./starter-code/assets/images/dropdown_mono.png)
 
-- Light-theme-serif ![../dictionary-web-app/starter-code/assets/images/light_theme_serif.png](../dictionary-web-app/starter-code/assets/images/light_theme_serif.png)
+- Light-theme-serif ![./starter-code/assets/images/light_theme_serif.png](./starter-code/assets/images/light_theme_serif.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Jo-cloud85/dictionary-web-app.git](https://github.com/Jo-cloud85/dictionary-web-app.git)
+- Live Site URL: [https://jo-cloud85.github.io/dictionary-web-app/](https://jo-cloud85.github.io/dictionary-web-app/)
 
 
 ## My process
