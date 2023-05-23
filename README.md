@@ -60,21 +60,21 @@ Users should be able to:
 
 ### What I learned
 
-- Understanding the structure of typical API response first
+- Understand the structure of a typical API response first before continuing
 
-The hardest part of this challenge was realising the json data of dictionary API response was not as striaghtforward and consistent as one would think.
+The hardest part of this challenge was realising that the json data of dictionary API response was not as striaghtforward and consistent as expected.
 
-Firstly, for example, there are a few items/dictionaries within the major key 'phonetics' and within each dictionary, there are keys like 'text' and 'audio' which are the ones that we need in this challenge. Each of the values of these keys are either missing or repeated. And the pattern/output is not the same for different words. Ultimately, you will want to only extract the first instance of the dictionary where both keys are available and there are valid values. Thus in that loop, a 'break' is necessary.
+Firstly, for example, there are a few items/dictionaries within the major key 'phonetics'. And within each dictionary, there are keys like 'text' and 'audio' which are the ones that we need in this challenge. However, some of the values of these keys are either missing or repeated. And the pattern/output is not the same for different words. Ultimately, you will want to only extract the first instance of the dictionary where both keys are available and there are valid values. Thus in that loop, a 'break' is necessary.
 
 The same thing applies for the next major key we want to look at - 'meanings'. 
 
-In the first place, the output is not as simple as just noun and verb only. There are adverbs, adjectives, interjections for some words and you have to display all of them accordingly. And for each type and in each type's definition, the value 'example' may or may not be available. 
+Here, it is important to know that the output is not as simple as just noun and verb only. There are adverbs, adjectives, interjections, etc for some of the words and you have to display all of them accordingly. Moreover, like 'phonetics', for each type and in each type's definition, the value 'example' may or may not be available. 
 
 Similarly, 'synonyms' and 'antonyms' - direct child keys of 'meanings'- may or may not be available as well.
 
 Thus, it makes a lot of sense to create a div template or structure for sub-divs of definitionSection for every partofSpeech available and then use Javascript to check for the availability of data in the API response and then add (or remove) the divs, elements and styles accordingly. Refer to the next point for the template.
 
-In addition, in the case of meanings, there is sometimes a repeat of the value for the key 'partOfSpeech'. This means that for example, if meanings is a list of 5 dictionaries, there can be 2 instanes where 'partOfSpeech' value is 'noun'. In this case, you have to merge the values.
+In addition, in the case of 'meanings', sometimes, there is a repeat of the value for the key 'partOfSpeech'. This means that for example, if the key 'meanings' is a list of 5 dictionaries, there can be 2 instances where 'partOfSpeech' value is 'noun'. In this case, you have to merge the values of the 2 dictionaries.
 
 
 - Learning how to integrate audio
